@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_95d9b549850f55eccacb01a58f4c3c4a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_95d9b549850f55eccacb01a58f4c3c4a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_95d9b549850f55eccacb01a58f4c3c4a = L.map(
+                "map_95d9b549850f55eccacb01a58f4c3c4a",
+                {
+                    center: [39.39, -77.77],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2404da72efb399075e9a4db81e4efa4e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+            var marker_e0847c33c6aec218d88c5d263d2a025d = L.marker(
+                [34.42675, -111.18315],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_978e118188710bdb0f5df8f8ba9b93ab = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_85a42d1c929553aaa0f3df23333ba6ba = $(`<div id="html_85a42d1c929553aaa0f3df23333ba6ba" style="width: 100.0%; height: 100.0%;">Mogollon Rim Trail<br>East Verde River<br>TEMP [56, 75, 55, 78, 53, 84, 55, 86, 56, 84, 52, 78, 51, 82]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_978e118188710bdb0f5df8f8ba9b93ab.setContent(html_85a42d1c929553aaa0f3df23333ba6ba);
+            
+        
+
+        marker_e0847c33c6aec218d88c5d263d2a025d.bindPopup(popup_978e118188710bdb0f5df8f8ba9b93ab)
+        ;
+
+        
+    
+    
+            var marker_26b15feac1088002f7f1bf41d5633333 = L.marker(
+                [34.13, -109.97],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_a847d6dfe9f006605f20ec88e7ce9e1e = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_8a8e60261467f61149766907ead91290 = $(`<div id="html_8a8e60261467f61149766907ead91290" style="width: 100.0%; height: 100.0%;">Arizona Trail<br>Little Colorado River<br>TEMP [49, 81, 47, 84, 48, 90, 53, 92, 55, 92, 54, 86, 50, 89]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_a847d6dfe9f006605f20ec88e7ce9e1e.setContent(html_8a8e60261467f61149766907ead91290);
+            
+        
+
+        marker_26b15feac1088002f7f1bf41d5633333.bindPopup(popup_a847d6dfe9f006605f20ec88e7ce9e1e)
+        ;
+
+        
+    
+    
+            var marker_414ef63da8530204224ce0555fec3852 = L.marker(
+                [34.310721, -112.002212],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_d6072ccc783e88b579551bd1e529fde0 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_e8ab5250bf3fc3d7aa644d04b2401287 = $(`<div id="html_e8ab5250bf3fc3d7aa644d04b2401287" style="width: 100.0%; height: 100.0%;">Black Canyon Trail<br>Agua Fria River<br>TEMP [64, 93, 62, 95, 63, 100, 68, 102, 68, 100, 64, 95, 64, 99]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_d6072ccc783e88b579551bd1e529fde0.setContent(html_e8ab5250bf3fc3d7aa644d04b2401287);
+            
+        
+
+        marker_414ef63da8530204224ce0555fec3852.bindPopup(popup_d6072ccc783e88b579551bd1e529fde0)
+        ;
+
+        
+    
+    
+            var marker_bb59ceaa08bc0dcefa06acf06fc2a5f0 = L.marker(
+                [34.566336, -112.412414],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_01892717020a9d266078bcb8495016d9 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_66d53186bda2ee18210b726727d2532d = $(`<div id="html_66d53186bda2ee18210b726727d2532d" style="width: 100.0%; height: 100.0%;">Prescott Circle Trail<br>Verde River<br>TEMP [59, 88, 58, 90, 58, 95, 61, 97, 62, 95, 57, 89, 58, 94]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_01892717020a9d266078bcb8495016d9.setContent(html_66d53186bda2ee18210b726727d2532d);
+            
+        
+
+        marker_bb59ceaa08bc0dcefa06acf06fc2a5f0.bindPopup(popup_01892717020a9d266078bcb8495016d9)
+        ;
+
+        
+    
+    
+            var marker_07507f115ff8e245eb9c3197af2cd546 = L.marker(
+                [36.10993, -109.286],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_db2ba95d727d2df4fdc0adac25d2ca3d = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_adc30879feab3059b9aa5ccaf96b7bf2 = $(`<div id="html_adc30879feab3059b9aa5ccaf96b7bf2" style="width: 100.0%; height: 100.0%;">Colorado River Trail<br>Colorado River<br>TEMP [53, 85, 53, 84, 52, 90, 54, 94, 58, 94, 56, 87, 52, 89]<br>PRECIP [0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 20, 20, 0, 0]</div>`)[0];
+                popup_db2ba95d727d2df4fdc0adac25d2ca3d.setContent(html_adc30879feab3059b9aa5ccaf96b7bf2);
+            
+        
+
+        marker_07507f115ff8e245eb9c3197af2cd546.bindPopup(popup_db2ba95d727d2df4fdc0adac25d2ca3d)
+        ;
+
+        
+    
+    
+            var marker_dbb2c187b279030cfcdbc87e4eeee389 = L.marker(
+                [40.452071, -108.84559],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_e3e88aacd418dea80dba5cdd3ecd2ec3 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_cfdc2016a32e722538b98eb9baa4fdf2 = $(`<div id="html_cfdc2016a32e722538b98eb9baa4fdf2" style="width: 100.0%; height: 100.0%;">Yampa River Trail<br>Yampa River<br>TEMP [60, 87, 61, 86, 57, 85, 58, 90, 61, 93, 62, 83, 57, 85]<br>PRECIP [0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_e3e88aacd418dea80dba5cdd3ecd2ec3.setContent(html_cfdc2016a32e722538b98eb9baa4fdf2);
+            
+        
+
+        marker_dbb2c187b279030cfcdbc87e4eeee389.bindPopup(popup_e3e88aacd418dea80dba5cdd3ecd2ec3)
+        ;
+
+        
+    
+    
+            var marker_c675a142199e8fa932c10899cdbdd618 = L.marker(
+                [37.270952, -107.835401],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_2b8e9f2b55fef685c710c186fbbf22f0 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_c408400314ecc7ba7cd2a8d91086e92e = $(`<div id="html_c408400314ecc7ba7cd2a8d91086e92e" style="width: 100.0%; height: 100.0%;">Animas River Trail<br>Animas River<br>TEMP [53, 83, 54, 75, 50, 84, 51, 88, 53, 89, 54, 82, 50, 83]<br>PRECIP [0, 20, 20, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_2b8e9f2b55fef685c710c186fbbf22f0.setContent(html_c408400314ecc7ba7cd2a8d91086e92e);
+            
+        
+
+        marker_c675a142199e8fa932c10899cdbdd618.bindPopup(popup_2b8e9f2b55fef685c710c186fbbf22f0)
+        ;
+
+        
+    
+    
+            var marker_80506e8f656373dbe0eb533ad9924339 = L.marker(
+                [38.717077, -75.06924],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_f01129e499f32baf6d47786d533be783 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_b59cf7ec44d2718857e6c267fea7307d = $(`<div id="html_b59cf7ec44d2718857e6c267fea7307d" style="width: 100.0%; height: 100.0%;">Junction and Breakwater Trail<br>Lewes & Rehoboth Canal<br>TEMP [68, 83, 64, 77, 64, 73, 63, 77, 68, 82, 71, 83, 70, 79]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_f01129e499f32baf6d47786d533be783.setContent(html_b59cf7ec44d2718857e6c267fea7307d);
+            
+        
+
+        marker_80506e8f656373dbe0eb533ad9924339.bindPopup(popup_f01129e499f32baf6d47786d533be783)
+        ;
+
+        
+    
+    
+            var marker_609e7212543dd4c9622d979bfce1ea4c = L.marker(
+                [39.6754, -75.6604],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_9e6202fed768de8cda7f205545c7ec8b = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_85e78ddfc7b9e4fed6ea0ff8affc6a89 = $(`<div id="html_85e78ddfc7b9e4fed6ea0ff8affc6a89" style="width: 100.0%; height: 100.0%;">White Clay Creek Trail<br>White Clay Creek<br>TEMP [63, 79, 60, 79, 59, 79, 59, 85, 65, 90, 70, 93, 69, 89]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_9e6202fed768de8cda7f205545c7ec8b.setContent(html_85e78ddfc7b9e4fed6ea0ff8affc6a89);
+            
+        
+
+        marker_609e7212543dd4c9622d979bfce1ea4c.bindPopup(popup_9e6202fed768de8cda7f205545c7ec8b)
+        ;
+
+        
+    
+    
+            var marker_5827d891c029322c0bf8c3c9448b3635 = L.marker(
+                [39.695, -75.77],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_8529eaa8d53e9d79e79c56e0c8034f8a = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_fd1498df908207e1714e611c068591c7 = $(`<div id="html_fd1498df908207e1714e611c068591c7" style="width: 100.0%; height: 100.0%;">Michael N. Castle Trail<br>White Clay Creek<br>TEMP [62, 80, 59, 78, 58, 78, 58, 84, 65, 90, 70, 93, 68, 89]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_8529eaa8d53e9d79e79c56e0c8034f8a.setContent(html_fd1498df908207e1714e611c068591c7);
+            
+        
+
+        marker_5827d891c029322c0bf8c3c9448b3635.bindPopup(popup_8529eaa8d53e9d79e79c56e0c8034f8a)
+        ;
+
+        
+    
+    
+            var marker_572581979b03ad168239552ad2f62158 = L.marker(
+                [39.71151, -75.59127],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_61c50fa735f7bc04ce0665398a0c7cd3 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_db0af3ef875ccca07f1bf0bed59ba1c7 = $(`<div id="html_db0af3ef875ccca07f1bf0bed59ba1c7" style="width: 100.0%; height: 100.0%;">Brandywine Creek Greenway<br>Brandywine Creek<br>TEMP [64, 81, 61, 79, 60, 80, 59, 85, 65, 90, 70, 93, 70, 90]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_61c50fa735f7bc04ce0665398a0c7cd3.setContent(html_db0af3ef875ccca07f1bf0bed59ba1c7);
+            
+        
+
+        marker_572581979b03ad168239552ad2f62158.bindPopup(popup_61c50fa735f7bc04ce0665398a0c7cd3)
+        ;
+
+        
+    
+    
+            var marker_f61c60fcd5b3c9f73a0e9f959d3f5f5d = L.marker(
+                [39.221716, -75.566202],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_18f1ea9ef0c09dfd1d059251e6cd4ac9 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_e0820e8565f6b8ea85e3df13dd200de0 = $(`<div id="html_e0820e8565f6b8ea85e3df13dd200de0" style="width: 100.0%; height: 100.0%;">Chesapeake & Delaware Canal Trail<br>Chesapeake & Delaware Canal<br>TEMP [64, 82, 61, 79, 61, 78, 60, 84, 66, 89, 71, 92, 70, 88]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_18f1ea9ef0c09dfd1d059251e6cd4ac9.setContent(html_e0820e8565f6b8ea85e3df13dd200de0);
+            
+        
+
+        marker_f61c60fcd5b3c9f73a0e9f959d3f5f5d.bindPopup(popup_18f1ea9ef0c09dfd1d059251e6cd4ac9)
+        ;
+
+        
+    
+    
+            var marker_10f4a34203058c01b5d6fb885885888c = L.marker(
+                [38.496, -75.068],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_0bec5058be71dd341e2f0bbc1aed2458 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_61af8a10d09dd2dd346f7a84f216ff2a = $(`<div id="html_61af8a10d09dd2dd346f7a84f216ff2a" style="width: 100.0%; height: 100.0%;">Delaware Coastal Heritage Trail<br>Delaware Bay<br>TEMP [68, 84, 61, 78, 62, 73, 61, 77, 65, 81, 69, 83, 69, 80]<br>PRECIP [0, 20, 20, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_0bec5058be71dd341e2f0bbc1aed2458.setContent(html_61af8a10d09dd2dd346f7a84f216ff2a);
+            
+        
+
+        marker_10f4a34203058c01b5d6fb885885888c.bindPopup(popup_0bec5058be71dd341e2f0bbc1aed2458)
+        ;
+
+        
+    
+    
+            var marker_98c0cd08aeb135bc2aa680db5aa8bc45 = L.marker(
+                [38.7487, -78.7017],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_5766d941fe77bede1143e82eb31d2863 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_4ea1e8bd3bbf391c387787f9d8d8490e = $(`<div id="html_4ea1e8bd3bbf391c387787f9d8d8490e" style="width: 100.0%; height: 100.0%;">Northwest Fork Blackwater Heritage Trail<br>Blackwater River<br>TEMP [59, 81, 53, 77, 51, 77, 52, 85, 59, 90, 65, 92, 64, 90]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_5766d941fe77bede1143e82eb31d2863.setContent(html_4ea1e8bd3bbf391c387787f9d8d8490e);
+            
+        
+
+        marker_98c0cd08aeb135bc2aa680db5aa8bc45.bindPopup(popup_5766d941fe77bede1143e82eb31d2863)
+        ;
+
+        
+    
+    
+            var marker_42e8e982a857639ec6156442296b66a3 = L.marker(
+                [39.146067, -77.416415],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_8823a0d643dee3eab844339ba0b1a65d = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_f7ff5eacb593ee8452f1f17061215edb = $(`<div id="html_f7ff5eacb593ee8452f1f17061215edb" style="width: 100.0%; height: 100.0%;">Big Creek Greenway<br>Big Creek<br>TEMP [62, 81, 58, 76, 54, 77, 55, 85, 63, 91, 67, 93, 69, 89]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_8823a0d643dee3eab844339ba0b1a65d.setContent(html_f7ff5eacb593ee8452f1f17061215edb);
+            
+        
+
+        marker_42e8e982a857639ec6156442296b66a3.bindPopup(popup_8823a0d643dee3eab844339ba0b1a65d)
+        ;
+
+        
+    
+    
+            var marker_bdc2976d383f2bebce9c120957df67c1 = L.marker(
+                [39.170815, -77.503801],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_c0e9a902e0cbd154d0870b2ef1fdb8cb = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_511528f331b313dfd5d5a92d29ea1f08 = $(`<div id="html_511528f331b313dfd5d5a92d29ea1f08" style="width: 100.0%; height: 100.0%;">Trout Creek Trail<br>Trout Creek<br>TEMP [62, 81, 58, 76, 54, 76, 55, 85, 63, 91, 67, 93, 69, 89]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_c0e9a902e0cbd154d0870b2ef1fdb8cb.setContent(html_511528f331b313dfd5d5a92d29ea1f08);
+            
+        
+
+        marker_bdc2976d383f2bebce9c120957df67c1.bindPopup(popup_c0e9a902e0cbd154d0870b2ef1fdb8cb)
+        ;
+
+        
+    
+    
+            var marker_40838e8984f99759be31f69cbe98cacb = L.marker(
+                [46.06408, -115.40894],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_ab0f7187cd77e5afd267fa6da8d7325f = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_46eed215f02612048985b00425158891 = $(`<div id="html_46eed215f02612048985b00425158891" style="width: 100.0%; height: 100.0%;">Selway River Trail<br>Selway River<br>TEMP [57, 78, 54, 75, 53, 80, 51, 74, 48, 82, 52, 77, 49, 66]<br>PRECIP [0, 30, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_ab0f7187cd77e5afd267fa6da8d7325f.setContent(html_46eed215f02612048985b00425158891);
+            
+        
+
+        marker_40838e8984f99759be31f69cbe98cacb.bindPopup(popup_ab0f7187cd77e5afd267fa6da8d7325f)
+        ;
+
+        
+    
+    
+            var marker_30a39e50d4e565350d2925d715ff83ba = L.marker(
+                [46.37195, -116.71693],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_a1bb13a258caecdc694bae1ba77c2d83 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_c5d2b507ffb2ed5dbcfe82700cbaed74 = $(`<div id="html_c5d2b507ffb2ed5dbcfe82700cbaed74" style="width: 100.0%; height: 100.0%;">Clearwater River Trail<br>Clearwater River<br>TEMP [57, 82, 56, 83, 54, 87, 52, 79, 49, 84, 54, 82, 50, 74]<br>PRECIP [0, 20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_a1bb13a258caecdc694bae1ba77c2d83.setContent(html_c5d2b507ffb2ed5dbcfe82700cbaed74);
+            
+        
+
+        marker_30a39e50d4e565350d2925d715ff83ba.bindPopup(popup_a1bb13a258caecdc694bae1ba77c2d83)
+        ;
+
+        
+    
+    
+            var marker_07bb5af60055e82756be8107d456a0c7 = L.marker(
+                [44.14072, -116.73763],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_ba58186dc2413a21a7bf809c3419055d = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_1efa960cfcaedb3d51c146dffacb28db = $(`<div id="html_1efa960cfcaedb3d51c146dffacb28db" style="width: 100.0%; height: 100.0%;">Snake River Trail<br>Snake River<br>TEMP [66, 84, 58, 82, 58, 88, 58, 84, 56, 88, 60, 85, 54, 75]<br>PRECIP [20, 20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_ba58186dc2413a21a7bf809c3419055d.setContent(html_1efa960cfcaedb3d51c146dffacb28db);
+            
+        
+
+        marker_07bb5af60055e82756be8107d456a0c7.bindPopup(popup_ba58186dc2413a21a7bf809c3419055d)
+        ;
+
+        
+    
+    
+            var marker_dddf6a73ac8d921f236d89b3c4bde49b = L.marker(
+                [43.85, -116.4106],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_e1c7902036dbfa7e51175e147dca36d3 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_0edf7d9b79930597152c58e171da424f = $(`<div id="html_0edf7d9b79930597152c58e171da424f" style="width: 100.0%; height: 100.0%;">Payette River Trail<br>Payette River<br>TEMP [63, 86, 55, 84, 57, 90, 56, 85, 54, 90, 58, 88, 53, 77]<br>PRECIP [20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_e1c7902036dbfa7e51175e147dca36d3.setContent(html_0edf7d9b79930597152c58e171da424f);
+            
+        
+
+        marker_dddf6a73ac8d921f236d89b3c4bde49b.bindPopup(popup_e1c7902036dbfa7e51175e147dca36d3)
+        ;
+
+        
+    
+    
+            var marker_6ef793e578102368e586e32577a69d2d = L.marker(
+                [44.5633, -116.3259],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_71b036179e83a2e4445d5aa892eed00c = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_3bcd32f5bba1031595def2e97a80f5d5 = $(`<div id="html_3bcd32f5bba1031595def2e97a80f5d5" style="width: 100.0%; height: 100.0%;">Weiser River Trail<br>Weiser River<br>TEMP [63, 76, 56, 73, 58, 78, 55, 75, 53, 81, 58, 77, 52, 67]<br>PRECIP [20, 40, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_71b036179e83a2e4445d5aa892eed00c.setContent(html_3bcd32f5bba1031595def2e97a80f5d5);
+            
+        
+
+        marker_6ef793e578102368e586e32577a69d2d.bindPopup(popup_71b036179e83a2e4445d5aa892eed00c)
+        ;
+
+        
+    
+    
+            var marker_bc56ede8bd8bd1096a6d6fb6f56810d2 = L.marker(
+                [43.5491, -116.3193],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_e95c32a51574987c8356c71446fc1594 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_89ed6fb41607d3ce89cdd7426b6de60a = $(`<div id="html_89ed6fb41607d3ce89cdd7426b6de60a" style="width: 100.0%; height: 100.0%;">Boise River Trail<br>Boise River<br>TEMP [64, 88, 57, 85, 55, 91, 58, 87, 55, 92, 60, 88, 54, 79]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_e95c32a51574987c8356c71446fc1594.setContent(html_89ed6fb41607d3ce89cdd7426b6de60a);
+            
+        
+
+        marker_bc56ede8bd8bd1096a6d6fb6f56810d2.bindPopup(popup_e95c32a51574987c8356c71446fc1594)
+        ;
+
+        
+    
+    
+            var marker_366849377ed4f38d2be8a4fbb9ac28d5 = L.marker(
+                [43.56634, -116.6637],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_0851d9487d13b3e5a611884ad87693b0 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_0d794ae0a0d3ec567a39da15156034ec = $(`<div id="html_0d794ae0a0d3ec567a39da15156034ec" style="width: 100.0%; height: 100.0%;">Big Wood River Trail<br>Big Wood River<br>TEMP [65, 85, 60, 83, 57, 91, 60, 87, 57, 90, 61, 89, 55, 79]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_0851d9487d13b3e5a611884ad87693b0.setContent(html_0d794ae0a0d3ec567a39da15156034ec);
+            
+        
+
+        marker_366849377ed4f38d2be8a4fbb9ac28d5.bindPopup(popup_0851d9487d13b3e5a611884ad87693b0)
+        ;
+
+        
+    
+    
+            var marker_33d9848ba570abb86d66df89c1d8c3b9 = L.marker(
+                [39.1362, -77.4019],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_04d5d28a6894304efd0db018f37e38fe = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_4f3f963bff91c6ebd23413b5aa1f9908 = $(`<div id="html_4f3f963bff91c6ebd23413b5aa1f9908" style="width: 100.0%; height: 100.0%;">Little Wood River Trail<br>Little Wood River<br>TEMP [62, 82, 58, 76, 56, 77, 55, 85, 64, 91, 67, 93, 69, 89]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_04d5d28a6894304efd0db018f37e38fe.setContent(html_4f3f963bff91c6ebd23413b5aa1f9908);
+            
+        
+
+        marker_33d9848ba570abb86d66df89c1d8c3b9.bindPopup(popup_04d5d28a6894304efd0db018f37e38fe)
+        ;
+
+        
+    
+    
+            var marker_6d161c76107fec363e1c7c98c7a40aa2 = L.marker(
+                [43.539109, -113.748874],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_da6f3a94253d82e1dbc54fdd0799b162 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_b4dbc97d01edcddb9d35006f6381e33c = $(`<div id="html_b4dbc97d01edcddb9d35006f6381e33c" style="width: 100.0%; height: 100.0%;">Big Lost River Trail<br>Big Lost River<br>TEMP [59, 80, 52, 77, 51, 79, 54, 81, 52, 84, 57, 82, 52, 73]<br>PRECIP [0, 70, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_da6f3a94253d82e1dbc54fdd0799b162.setContent(html_b4dbc97d01edcddb9d35006f6381e33c);
+            
+        
+
+        marker_6d161c76107fec363e1c7c98c7a40aa2.bindPopup(popup_da6f3a94253d82e1dbc54fdd0799b162)
+        ;
+
+        
+    
+    
+            var marker_b18ebfc3a6f6b6d4282328d45159751c = L.marker(
+                [42.874139, -113.813586],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_69c615436d121f43060fd73d91e865aa = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_601a14ecb0d6e2e6e6c2d3ba960dbc51 = $(`<div id="html_601a14ecb0d6e2e6e6c2d3ba960dbc51" style="width: 100.0%; height: 100.0%;">Little Lost River Trail<br>Little Lost River<br>TEMP [60, 89, 56, 81, 51, 86, 55, 87, 53, 90, 57, 87, 53, 79]<br>PRECIP [0, 50, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_69c615436d121f43060fd73d91e865aa.setContent(html_601a14ecb0d6e2e6e6c2d3ba960dbc51);
+            
+        
+
+        marker_b18ebfc3a6f6b6d4282328d45159751c.bindPopup(popup_69c615436d121f43060fd73d91e865aa)
+        ;
+
+        
+    
+    
+            var marker_baaae491ecee6e7fd402207140c241a1 = L.marker(
+                [39.0981, -77.6272],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_2ec70e4b90f2f0fa32e231b2123a3752 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_499cc3b45de296b2f7f0e2a706b51e2a = $(`<div id="html_499cc3b45de296b2f7f0e2a706b51e2a" style="width: 100.0%; height: 100.0%;">Big Creek Trail<br>Big Creek<br>TEMP [63, 80, 58, 75, 53, 75, 54, 83, 62, 90, 67, 92, 68, 88]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_2ec70e4b90f2f0fa32e231b2123a3752.setContent(html_499cc3b45de296b2f7f0e2a706b51e2a);
+            
+        
+
+        marker_baaae491ecee6e7fd402207140c241a1.bindPopup(popup_2ec70e4b90f2f0fa32e231b2123a3752)
+        ;
+
+        
+    
+    
+            var marker_532698b50cfec6a98ac8f98647866e81 = L.marker(
+                [43.541, -115.902],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_e65fdc07ea3587fb8eb476218ab00540 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_a8659c098d4fce22ef9b6bac539c6dc7 = $(`<div id="html_a8659c098d4fce22ef9b6bac539c6dc7" style="width: 100.0%; height: 100.0%;">Middle Fork of the Boise River Trail<br>Middle Fork of the Boise River<br>TEMP [61, 81, 53, 76, 53, 81, 55, 79, 52, 85, 57, 80, 50, 70]<br>PRECIP [0, 20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_e65fdc07ea3587fb8eb476218ab00540.setContent(html_a8659c098d4fce22ef9b6bac539c6dc7);
+            
+        
+
+        marker_532698b50cfec6a98ac8f98647866e81.bindPopup(popup_e65fdc07ea3587fb8eb476218ab00540)
+        ;
+
+        
+    
+    
+            var marker_e62c4f18880ba5183358aa229ba7d274 = L.marker(
+                [43.94519, -115.45365],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_87434a9ebcf2e6a498a6ac8fd24f19cb = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_afdbe6c0b00be91239a95443506ba510 = $(`<div id="html_afdbe6c0b00be91239a95443506ba510" style="width: 100.0%; height: 100.0%;">South Fork of the Boise River Trail<br>South Fork of the Boise River<br>TEMP [59, 78, 52, 73, 51, 77, 53, 77, 52, 82, 57, 78, 51, 68]<br>PRECIP [0, 50, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_87434a9ebcf2e6a498a6ac8fd24f19cb.setContent(html_afdbe6c0b00be91239a95443506ba510);
+            
+        
+
+        marker_e62c4f18880ba5183358aa229ba7d274.bindPopup(popup_87434a9ebcf2e6a498a6ac8fd24f19cb)
+        ;
+
+        
+    
+    
+            var marker_95007b68c631085fca07874adabd3a9a = L.marker(
+                [39.169445, -77.389941],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_2035414742cd20fa64893441e0764f97 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_364e76ebeb760a8f3330ba01ffe5a66b = $(`<div id="html_364e76ebeb760a8f3330ba01ffe5a66b" style="width: 100.0%; height: 100.0%;">Brundage Creek Trail<br>Brundage Creek<br>TEMP [61, 81, 58, 76, 54, 76, 55, 84, 64, 90, 68, 93, 69, 89]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_2035414742cd20fa64893441e0764f97.setContent(html_364e76ebeb760a8f3330ba01ffe5a66b);
+            
+        
+
+        marker_95007b68c631085fca07874adabd3a9a.bindPopup(popup_2035414742cd20fa64893441e0764f97)
+        ;
+
+        
+    
+    
+            var marker_f75eb2e3065b49c2a2c2d2216f494f87 = L.marker(
+                [39.158732, -77.434712],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_385f9ebbb46687c58888c81a72c9743b = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_556b2f48ab762b3868a2f7b952a223aa = $(`<div id="html_556b2f48ab762b3868a2f7b952a223aa" style="width: 100.0%; height: 100.0%;">Salmon Falls Creek Trail<br>Salmon Falls Creek<br>TEMP [62, 82, 58, 76, 54, 77, 55, 85, 64, 91, 67, 93, 69, 89]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_385f9ebbb46687c58888c81a72c9743b.setContent(html_556b2f48ab762b3868a2f7b952a223aa);
+            
+        
+
+        marker_f75eb2e3065b49c2a2c2d2216f494f87.bindPopup(popup_385f9ebbb46687c58888c81a72c9743b)
+        ;
+
+        
+    
+    
+            var marker_7373248168f34f4f0e08af7617449684 = L.marker(
+                [43.053162, -116.814118],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_bc71a7efb252b9ba6b28e468d979923f = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_bd329e5eab99635262becacdbb28622e = $(`<div id="html_bd329e5eab99635262becacdbb28622e" style="width: 100.0%; height: 100.0%;">Owyhee River Trail<br>Owyhee River<br>TEMP [58, 72, 48, 69, 51, 76, 51, 73, 49, 77, 53, 72, 46, 63]<br>PRECIP [20, 50, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_bc71a7efb252b9ba6b28e468d979923f.setContent(html_bd329e5eab99635262becacdbb28622e);
+            
+        
+
+        marker_7373248168f34f4f0e08af7617449684.bindPopup(popup_bc71a7efb252b9ba6b28e468d979923f)
+        ;
+
+        
+    
+    
+            var marker_5868c800dd883597671aab87ea94f547 = L.marker(
+                [45.937351, -116.7267],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_4d06f888de48669c7e3ba79131784f0c = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_17b789189518718f6ffc6095ab032e26 = $(`<div id="html_17b789189518718f6ffc6095ab032e26" style="width: 100.0%; height: 100.0%;">Brownlee Reservoir Trail<br>Brownlee Reservoir<br>TEMP [61, 79, 57, 82, 56, 85, 53, 80, 52, 83, 57, 81, 52, 70]<br>PRECIP [0, 30, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_4d06f888de48669c7e3ba79131784f0c.setContent(html_17b789189518718f6ffc6095ab032e26);
+            
+        
+
+        marker_5868c800dd883597671aab87ea94f547.bindPopup(popup_4d06f888de48669c7e3ba79131784f0c)
+        ;
+
+        
+    
+    
+            var marker_c82fb1fdf65c258ef40d6af38c527698 = L.marker(
+                [41.4238, -89.455],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_ada3c53d4f9e4fba7ca9752a78ffbb41 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_202182ad04843261b4e67cc9b343f11b = $(`<div id="html_202182ad04843261b4e67cc9b343f11b" style="width: 100.0%; height: 100.0%;">Hennepin Canal Parkway Trail<br>Illinois River<br>TEMP [55, 79, 53, 73, 49, 79, 63, 86, 65, 91, 67, 87, 63, 87]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 0, 0, 0]</div>`)[0];
+                popup_ada3c53d4f9e4fba7ca9752a78ffbb41.setContent(html_202182ad04843261b4e67cc9b343f11b);
+            
+        
+
+        marker_c82fb1fdf65c258ef40d6af38c527698.bindPopup(popup_ada3c53d4f9e4fba7ca9752a78ffbb41)
+        ;
+
+        
+    
+    
+            var marker_94f79f9abfec3ccdae5202ddd9e2e7b6 = L.marker(
+                [41.177867, -90.173567],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_95450a3349319b1212cee4dd59383ee5 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_6a854f61af32382275a8d3d93429655f = $(`<div id="html_6a854f61af32382275a8d3d93429655f" style="width: 100.0%; height: 100.0%;">Great River Trail<br>Mississippi River<br>TEMP [56, 80, 54, 74, 50, 80, 63, 87, 66, 92, 67, 88, 64, 88]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_95450a3349319b1212cee4dd59383ee5.setContent(html_6a854f61af32382275a8d3d93429655f);
+            
+        
+
+        marker_94f79f9abfec3ccdae5202ddd9e2e7b6.bindPopup(popup_95450a3349319b1212cee4dd59383ee5)
+        ;
+
+        
+    
+    
+            var marker_996c00dd9f17f301e73e7c546dd02a94 = L.marker(
+                [41.0015, -87.5099],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_f89965ae524808d5ec69eaa5f5b67c7e = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_a535c37010cb9360b1021ca47595cec7 = $(`<div id="html_a535c37010cb9360b1021ca47595cec7" style="width: 100.0%; height: 100.0%;">Kankakee River Trail<br>Kankakee River<br>TEMP [55, 79, 53, 69, 45, 77, 59, 86, 63, 91, 68, 88, 62, 87]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_f89965ae524808d5ec69eaa5f5b67c7e.setContent(html_a535c37010cb9360b1021ca47595cec7);
+            
+        
+
+        marker_996c00dd9f17f301e73e7c546dd02a94.bindPopup(popup_f89965ae524808d5ec69eaa5f5b67c7e)
+        ;
+
+        
+    
+    
+            var marker_1449cc0692732b5329fc2d6468c1148c = L.marker(
+                [40.7279, -95.1841],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_766f734d60a4cb38609849fd854887cb = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_973f2ed4fc964a8e3331059e193fb88d = $(`<div id="html_973f2ed4fc964a8e3331059e193fb88d" style="width: 100.0%; height: 100.0%;">Wabash Trace Nature Trail<br>Nishnabotna River<br>TEMP [59, 81, 55, 79, 58, 82, 62, 89, 68, 93, 65, 89, 66, 88]<br>PRECIP [20, 0, 0, 0, 0, 30, 30, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_766f734d60a4cb38609849fd854887cb.setContent(html_973f2ed4fc964a8e3331059e193fb88d);
+            
+        
+
+        marker_1449cc0692732b5329fc2d6468c1148c.bindPopup(popup_766f734d60a4cb38609849fd854887cb)
+        ;
+
+        
+    
+    
+            var marker_66cd61a9c5b8813f11a02932b21a6a0d = L.marker(
+                [41.999736, -90.726982],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_e1009e7b7d014b1c02c92e3331ed7bff = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_26d9d32ba0883888e089448bbc28935a = $(`<div id="html_26d9d32ba0883888e089448bbc28935a" style="width: 100.0%; height: 100.0%;">Maquoketa River Trail<br>Maquoketa River<br>TEMP [53, 78, 52, 72, 50, 78, 62, 85, 66, 89, 65, 84, 61, 85]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 30, 0, 0]</div>`)[0];
+                popup_e1009e7b7d014b1c02c92e3331ed7bff.setContent(html_26d9d32ba0883888e089448bbc28935a);
+            
+        
+
+        marker_66cd61a9c5b8813f11a02932b21a6a0d.bindPopup(popup_e1009e7b7d014b1c02c92e3331ed7bff)
+        ;
+
+        
+    
+    
+            var marker_b480d907b0a6378cee3c3b11bc6fa1fd = L.marker(
+                [39.31989, -79.735753],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_034191dafc632e7c33e7361f434ec111 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_fa9e9427ea1e593526de9bfcf28adda8 = $(`<div id="html_fa9e9427ea1e593526de9bfcf28adda8" style="width: 100.0%; height: 100.0%;">Tuttle Creek Trail<br>Big Blue River<br>TEMP [59, 71, 51, 64, 46, 69, 48, 77, 56, 83, 62, 85, 61, 83]<br>PRECIP [20, 40, 0, 20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_034191dafc632e7c33e7361f434ec111.setContent(html_fa9e9427ea1e593526de9bfcf28adda8);
+            
+        
+
+        marker_b480d907b0a6378cee3c3b11bc6fa1fd.bindPopup(popup_034191dafc632e7c33e7361f434ec111)
+        ;
+
+        
+    
+    
+            var marker_85575178e3f4eca1606aa3e5cece2238 = L.marker(
+                [39.140854, -77.415999],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_1d867c560af6b06dcfb6703aba07cfe9 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_756239aad52cfe54d280d5976ca10d33 = $(`<div id="html_756239aad52cfe54d280d5976ca10d33" style="width: 100.0%; height: 100.0%;">Elkhorn Creek Trail<br>Elkhorn Creek<br>TEMP [62, 81, 58, 76, 54, 77, 55, 85, 63, 91, 67, 93, 69, 89]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_1d867c560af6b06dcfb6703aba07cfe9.setContent(html_756239aad52cfe54d280d5976ca10d33);
+            
+        
+
+        marker_85575178e3f4eca1606aa3e5cece2238.bindPopup(popup_1d867c560af6b06dcfb6703aba07cfe9)
+        ;
+
+        
+    
+    
+            var marker_b10978f57121f43be934d6ef806e9c0c = L.marker(
+                [47.3073, -122.2174],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_a37b2ccf8f6c44d96869ff5700e199fd = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_426a0a84259bde33ea27550e4951655d = $(`<div id="html_426a0a84259bde33ea27550e4951655d" style="width: 100.0%; height: 100.0%;">Green River Trail<br>Green River<br>TEMP [54, 76, 51, 74, 53, 71, 50, 70, 47, 73, 49, 69, 49, 63]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_a37b2ccf8f6c44d96869ff5700e199fd.setContent(html_426a0a84259bde33ea27550e4951655d);
+            
+        
+
+        marker_b10978f57121f43be934d6ef806e9c0c.bindPopup(popup_a37b2ccf8f6c44d96869ff5700e199fd)
+        ;
+
+        
+    
+    
+            var marker_db0a9b652ac4c1ec1171cbfd57f0db0e = L.marker(
+                [38.100812, -84.755063],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_d1359611ad311c973251391a123f3219 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_1a420087554416dafef880b5cd8056e0 = $(`<div id="html_1a420087554416dafef880b5cd8056e0" style="width: 100.0%; height: 100.0%;">Kentucky River Trail<br>Kentucky River<br>TEMP [66, 80, 55, 76, 53, 79, 55, 85, 60, 90, 65, 92, 67, 91]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 20, 20]</div>`)[0];
+                popup_d1359611ad311c973251391a123f3219.setContent(html_1a420087554416dafef880b5cd8056e0);
+            
+        
+
+        marker_db0a9b652ac4c1ec1171cbfd57f0db0e.bindPopup(popup_d1359611ad311c973251391a123f3219)
+        ;
+
+        
+    
+    
+            var marker_87476d134d80ceda1a8fbb03d0499e0b = L.marker(
+                [38.537766, -84.317923],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_36fd6315949e1018e491a7933eec26c5 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_7f6c626a224fb76de2b30c21bb24dacc = $(`<div id="html_7f6c626a224fb76de2b30c21bb24dacc" style="width: 100.0%; height: 100.0%;">Licking River Greenway and Trail<br>Licking River<br>TEMP [64, 79, 55, 74, 52, 78, 55, 83, 60, 88, 65, 91, 64, 89]<br>PRECIP [20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 20, 0]</div>`)[0];
+                popup_36fd6315949e1018e491a7933eec26c5.setContent(html_7f6c626a224fb76de2b30c21bb24dacc);
+            
+        
+
+        marker_87476d134d80ceda1a8fbb03d0499e0b.bindPopup(popup_36fd6315949e1018e491a7933eec26c5)
+        ;
+
+        
+    
+    
+            var marker_7cdad41ba29f40ab830d6011c8c48478 = L.marker(
+                [39.1031, -84.506],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_5f8470c24376b92e2e657033f069574e = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_4a703fa1cc1ac432ee3331d4c8095c24 = $(`<div id="html_4a703fa1cc1ac432ee3331d4c8095c24" style="width: 100.0%; height: 100.0%;">Ohio River Trail<br>Ohio River<br>TEMP [64, 82, 56, 74, 53, 81, 57, 86, 62, 91, 67, 93, 66, 92]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_5f8470c24376b92e2e657033f069574e.setContent(html_4a703fa1cc1ac432ee3331d4c8095c24);
+            
+        
+
+        marker_7cdad41ba29f40ab830d6011c8c48478.bindPopup(popup_5f8470c24376b92e2e657033f069574e)
+        ;
+
+        
+    
+    
+            var marker_1a89f3fe0033a8d41c0ea98dfd3adf04 = L.marker(
+                [37.81412, -85.47172],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_618703cec5295919c41f1426af5fa28d = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_6d78dfdc3dcaf3560beb33a3d26fdbd5 = $(`<div id="html_6d78dfdc3dcaf3560beb33a3d26fdbd5" style="width: 100.0%; height: 100.0%;">Taylorsville Lake Trail<br>Salt River<br>TEMP [65, 79, 55, 76, 51, 78, 54, 84, 59, 89, 65, 91, 66, 91]<br>PRECIP [20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 20, 20]</div>`)[0];
+                popup_618703cec5295919c41f1426af5fa28d.setContent(html_6d78dfdc3dcaf3560beb33a3d26fdbd5);
+            
+        
+
+        marker_1a89f3fe0033a8d41c0ea98dfd3adf04.bindPopup(popup_618703cec5295919c41f1426af5fa28d)
+        ;
+
+        
+    
+    
+            var marker_e7a5adda4b2b13c4cd76da8892b5f721 = L.marker(
+                [46.2249, -94.2059],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_978e98ec9372cc40c3fb0ca5f4527c1d = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_5c38dcdcc1475a8d53900b024b99c90e = $(`<div id="html_5c38dcdcc1475a8d53900b024b99c90e" style="width: 100.0%; height: 100.0%;">Paul Bunyan Trail<br>Crow Wing River<br>TEMP [50, 68, 45, 72, 55, 72, 51, 80, 59, 80, 55, 76, 54, 76]<br>PRECIP [0, 0, 0, 0, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_978e98ec9372cc40c3fb0ca5f4527c1d.setContent(html_5c38dcdcc1475a8d53900b024b99c90e);
+            
+        
+
+        marker_e7a5adda4b2b13c4cd76da8892b5f721.bindPopup(popup_978e98ec9372cc40c3fb0ca5f4527c1d)
+        ;
+
+        
+    
+    
+            var marker_469a0abc823eb69d88a598daa891c56b = L.marker(
+                [46.8012, -92.171],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_ebfb852f252209340e137dc620d7b6b6 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_d6b9b2966ad63d991f8f62681d4ab43f = $(`<div id="html_d6b9b2966ad63d991f8f62681d4ab43f" style="width: 100.0%; height: 100.0%;">Willard Munger State Trail<br>St. Croix River<br>TEMP [49, 63, 45, 68, 48, 69, 51, 77, 57, 78, 55, 73, 53, 71]<br>PRECIP [0, 0, 0, 0, 30, 70, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_ebfb852f252209340e137dc620d7b6b6.setContent(html_d6b9b2966ad63d991f8f62681d4ab43f);
+            
+        
+
+        marker_469a0abc823eb69d88a598daa891c56b.bindPopup(popup_ebfb852f252209340e137dc620d7b6b6)
+        ;
+
+        
+    
+    
+            var marker_fd33d2d1357a53bfbc055b57885e6ff6 = L.marker(
+                [46.43193, -93.71147],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_5a578c96aac28e6ef8a333541619962f = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_eae50c0362949d767c8171b9ab2e0e13 = $(`<div id="html_eae50c0362949d767c8171b9ab2e0e13" style="width: 100.0%; height: 100.0%;">Cuyuna Lakes State Trail<br>Cuyuna River<br>TEMP [49, 66, 42, 72, 53, 72, 50, 80, 57, 80, 54, 76, 53, 75]<br>PRECIP [0, 0, 0, 0, 50, 60, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_5a578c96aac28e6ef8a333541619962f.setContent(html_eae50c0362949d767c8171b9ab2e0e13);
+            
+        
+
+        marker_fd33d2d1357a53bfbc055b57885e6ff6.bindPopup(popup_5a578c96aac28e6ef8a333541619962f)
+        ;
+
+        
+    
+    
+            var marker_ae65d647baf48489c2aff01c441c09c7 = L.marker(
+                [41.8175, -99.992],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_19d37f46b36c3f5e2fa410d4d6457aac = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_0a07f5d8a6f841e5b96c0bcf389b482d = $(`<div id="html_0a07f5d8a6f841e5b96c0bcf389b482d" style="width: 100.0%; height: 100.0%;">Niobrara River Trail<br>Niobrara River<br>TEMP [52, 76, 54, 80, 58, 81, 59, 89, 64, 88, 59, 83, 60, 81]<br>PRECIP [0, 0, 0, 0, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_19d37f46b36c3f5e2fa410d4d6457aac.setContent(html_0a07f5d8a6f841e5b96c0bcf389b482d);
+            
+        
+
+        marker_ae65d647baf48489c2aff01c441c09c7.bindPopup(popup_19d37f46b36c3f5e2fa410d4d6457aac)
+        ;
+
+        
+    
+    
+            var marker_0cdaa2a5c732100e6bc4da6c2b356d4b = L.marker(
+                [42.087847, -99.7165],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_b52f2f7d79021c751857dd794735d20e = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_2f493a5396c5833ad450e24c649409ed = $(`<div id="html_2f493a5396c5833ad450e24c649409ed" style="width: 100.0%; height: 100.0%;">Keya Paha River Trail<br>Keya Paha River<br>TEMP [51, 76, 53, 79, 58, 81, 58, 88, 63, 86, 58, 82, 60, 80]<br>PRECIP [0, 0, 0, 0, 60, 60, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_b52f2f7d79021c751857dd794735d20e.setContent(html_2f493a5396c5833ad450e24c649409ed);
+            
+        
+
+        marker_0cdaa2a5c732100e6bc4da6c2b356d4b.bindPopup(popup_b52f2f7d79021c751857dd794735d20e)
+        ;
+
+        
+    
+    
+            var marker_303d825b66adb0d9f02cd402fb659281 = L.marker(
+                [41.764315, -98.803041],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_5c77380a04b39ed5694bb73b1d4110e9 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_93d3171c645873d475384c68f78ff4ce = $(`<div id="html_93d3171c645873d475384c68f78ff4ce" style="width: 100.0%; height: 100.0%;">Loup River Trail<br>Loup River<br>TEMP [52, 77, 53, 79, 60, 82, 58, 88, 65, 88, 60, 83, 62, 81]<br>PRECIP [0, 0, 0, 0, 40, 40, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_5c77380a04b39ed5694bb73b1d4110e9.setContent(html_93d3171c645873d475384c68f78ff4ce);
+            
+        
+
+        marker_303d825b66adb0d9f02cd402fb659281.bindPopup(popup_5c77380a04b39ed5694bb73b1d4110e9)
+        ;
+
+        
+    
+    
+            var marker_320aefc0688edd5adc46ab485346c563 = L.marker(
+                [42.9082, -89.4247],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_56e9a59a57fd04fc5587de39738a8a86 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_6b315b04a6423af5a7ff94e9a80f4dab = $(`<div id="html_6b315b04a6423af5a7ff94e9a80f4dab" style="width: 100.0%; height: 100.0%;">Sugar River Trail<br>Sugar River<br>TEMP [51, 74, 50, 70, 47, 75, 60, 82, 62, 87, 62, 81, 59, 82]<br>PRECIP [0, 0, 0, 0, 0, 0, 20, 0, 0, 20, 30, 20, 0, 20]</div>`)[0];
+                popup_56e9a59a57fd04fc5587de39738a8a86.setContent(html_6b315b04a6423af5a7ff94e9a80f4dab);
+            
+        
+
+        marker_320aefc0688edd5adc46ab485346c563.bindPopup(popup_56e9a59a57fd04fc5587de39738a8a86)
+        ;
+
+        
+    
+    
+            var marker_c57302ce77098e0ad7fd1bb86d478d2a = L.marker(
+                [39.595086, -75.775039],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_0c88ddb5a130f954d5fc5353e7d362dc = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_36794873b928a3b051dcdb899f7da17b = $(`<div id="html_36794873b928a3b051dcdb899f7da17b" style="width: 100.0%; height: 100.0%;">Salmon Falls River Trail<br>Salmon Falls River<br>TEMP [62, 80, 59, 77, 58, 78, 58, 84, 65, 89, 70, 92, 69, 89]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_0c88ddb5a130f954d5fc5353e7d362dc.setContent(html_36794873b928a3b051dcdb899f7da17b);
+            
+        
+
+        marker_c57302ce77098e0ad7fd1bb86d478d2a.bindPopup(popup_0c88ddb5a130f954d5fc5353e7d362dc)
+        ;
+
+        
+    
+    
+            var marker_129abf9ad46ef5833bdfd06df6455c5a = L.marker(
+                [38.988305, -77.412768],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_477a6fa5e11759ca88bd8e55b4a739c1 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_25ed20ea58e7995876d3d0bbe01959f2 = $(`<div id="html_25ed20ea58e7995876d3d0bbe01959f2" style="width: 100.0%; height: 100.0%;">Canaan Branch Trail<br>Canaan Branch<br>TEMP [63, 83, 59, 77, 56, 77, 57, 85, 65, 92, 69, 94, 70, 90]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_477a6fa5e11759ca88bd8e55b4a739c1.setContent(html_25ed20ea58e7995876d3d0bbe01959f2);
+            
+        
+
+        marker_129abf9ad46ef5833bdfd06df6455c5a.bindPopup(popup_477a6fa5e11759ca88bd8e55b4a739c1)
+        ;
+
+        
+    
+    
+            var marker_c8f2f5c1effd0430f0a3c2abfe7e89d4 = L.marker(
+                [41.3139, -72.9263],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_5a18d81325c1da28c1e710c65bd0dce5 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_1c98b576c818484f9e1d58746b21a701 = $(`<div id="html_1c98b576c818484f9e1d58746b21a701" style="width: 100.0%; height: 100.0%;">Connecticut River Trail<br>Connecticut River<br>TEMP [61, 78, 59, 78, 58, 77, 59, 81, 62, 85, 66, 87, 65, 85]<br>PRECIP [0, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 30]</div>`)[0];
+                popup_5a18d81325c1da28c1e710c65bd0dce5.setContent(html_1c98b576c818484f9e1d58746b21a701);
+            
+        
+
+        marker_c8f2f5c1effd0430f0a3c2abfe7e89d4.bindPopup(popup_5a18d81325c1da28c1e710c65bd0dce5)
+        ;
+
+        
+    
+    
+            var marker_0dd763f491fdabf5be5bd3d95ec24e7c = L.marker(
+                [41.44975, -73.6366],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_ae12268128ddffd233a748896024b1c4 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_123d1fbb0bbec1707ce128b2ca263518 = $(`<div id="html_123d1fbb0bbec1707ce128b2ca263518" style="width: 100.0%; height: 100.0%;">Putnam County Trailway<br>Hudson River<br>TEMP [58, 74, 54, 74, 53, 75, 55, 80, 59, 86, 64, 88, 63, 84]<br>PRECIP [0, 60, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 30, 0]</div>`)[0];
+                popup_ae12268128ddffd233a748896024b1c4.setContent(html_123d1fbb0bbec1707ce128b2ca263518);
+            
+        
+
+        marker_0dd763f491fdabf5be5bd3d95ec24e7c.bindPopup(popup_ae12268128ddffd233a748896024b1c4)
+        ;
+
+        
+    
+    
+            var marker_e61c7a659bd8af74893daacfd4c4c27f = L.marker(
+                [39.171271, -77.326923],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_278143973810eced48fec96e3456c89d = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_e1628aa86a2c2ec1de5875f0fa9a801f = $(`<div id="html_e1628aa86a2c2ec1de5875f0fa9a801f" style="width: 100.0%; height: 100.0%;">Bear Creek Greenway<br>Bear Creek<br>TEMP [62, 81, 58, 76, 55, 77, 56, 85, 64, 91, 68, 93, 69, 89]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_278143973810eced48fec96e3456c89d.setContent(html_e1628aa86a2c2ec1de5875f0fa9a801f);
+            
+        
+
+        marker_e61c7a659bd8af74893daacfd4c4c27f.bindPopup(popup_278143973810eced48fec96e3456c89d)
+        ;
+
+        
+    
+    
+            var marker_ab7b9dd0528fa5a8c39683aefa8db422 = L.marker(
+                [43.5128, -122.6642],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_8e27c10138d959924f562afd237ad7fb = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_f56e0d67b7a26d5fa729d634e85646d3 = $(`<div id="html_f56e0d67b7a26d5fa729d634e85646d3" style="width: 100.0%; height: 100.0%;">Row River Trail<br>Row River<br>TEMP [51, 69, 50, 74, 52, 73, 50, 69, 46, 72, 46, 65, 44, 59]<br>PRECIP [20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_8e27c10138d959924f562afd237ad7fb.setContent(html_f56e0d67b7a26d5fa729d634e85646d3);
+            
+        
+
+        marker_ab7b9dd0528fa5a8c39683aefa8db422.bindPopup(popup_8e27c10138d959924f562afd237ad7fb)
+        ;
+
+        
+    
+    
+            var marker_749e0c8f71b54e55b6694ea988ad6636 = L.marker(
+                [44.92826, -122.955],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_fc9c469b83ab1688e85382bb3cb76919 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_4cce22a96186cde8418723fef7fa520e = $(`<div id="html_4cce22a96186cde8418723fef7fa520e" style="width: 100.0%; height: 100.0%;">Willamette Greenway Trail<br>Willamette River<br>TEMP [53, 78, 49, 79, 53, 77, 49, 74, 47, 78, 48, 72, 49, 66]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_fc9c469b83ab1688e85382bb3cb76919.setContent(html_4cce22a96186cde8418723fef7fa520e);
+            
+        
+
+        marker_749e0c8f71b54e55b6694ea988ad6636.bindPopup(popup_fc9c469b83ab1688e85382bb3cb76919)
+        ;
+
+        
+    
+    
+            var marker_fc41d195a348df790a06a348e28cd4bf = L.marker(
+                [45.3852, -122.6397],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_cf033d2aa50745b7dd10b94e3246356a = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_f05f7e5927acb5f520f98aa974a3992c = $(`<div id="html_f05f7e5927acb5f520f98aa974a3992c" style="width: 100.0%; height: 100.0%;">Clackamas River Trail<br>Clackamas River<br>TEMP [55, 78, 49, 79, 54, 77, 50, 74, 48, 79, 49, 72, 49, 66]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_cf033d2aa50745b7dd10b94e3246356a.setContent(html_f05f7e5927acb5f520f98aa974a3992c);
+            
+        
+
+        marker_fc41d195a348df790a06a348e28cd4bf.bindPopup(popup_cf033d2aa50745b7dd10b94e3246356a)
+        ;
+
+        
+    
+    
+            var marker_1d727fe1d7c6354d82f1456b26eb6731 = L.marker(
+                [44.9791, -121.6016],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_0acd6a333606a8906cd447177e1957f1 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_27871d543bb9ea5b4a3d30a2abdd71a5 = $(`<div id="html_27871d543bb9ea5b4a3d30a2abdd71a5" style="width: 100.0%; height: 100.0%;">Sandy River Trail<br>Sandy River<br>TEMP [55, 72, 49, 75, 52, 74, 45, 71, 43, 77, 46, 67, 43, 61]<br>PRECIP [20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_0acd6a333606a8906cd447177e1957f1.setContent(html_27871d543bb9ea5b4a3d30a2abdd71a5);
+            
+        
+
+        marker_1d727fe1d7c6354d82f1456b26eb6731.bindPopup(popup_0acd6a333606a8906cd447177e1957f1)
+        ;
+
+        
+    
+    
+            var marker_e4857383d74bdbd258e2ad7ef3a1aa6c = L.marker(
+                [44.7647, -118.8572],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_ab8515207187192fcd07fc240f19de5e = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_1a4996a9a9115471f0b753813f363043 = $(`<div id="html_1a4996a9a9115471f0b753813f363043" style="width: 100.0%; height: 100.0%;">John Day River Trail<br>John Day River<br>TEMP [56, 74, 51, 77, 54, 81, 48, 76, 47, 83, 51, 74, 45, 67]<br>PRECIP [40, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_ab8515207187192fcd07fc240f19de5e.setContent(html_1a4996a9a9115471f0b753813f363043);
+            
+        
+
+        marker_e4857383d74bdbd258e2ad7ef3a1aa6c.bindPopup(popup_ab8515207187192fcd07fc240f19de5e)
+        ;
+
+        
+    
+    
+            var marker_3f44e3d93249ad4657ca515ea45f5bc3 = L.marker(
+                [43.958881, -123.176748],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_041a0a03fcb69949fbbf0c36c19f8d67 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_525dbe4d712d5c20ce09715641659118 = $(`<div id="html_525dbe4d712d5c20ce09715641659118" style="width: 100.0%; height: 100.0%;">Umpqua River Trail<br>Umpqua River<br>TEMP [51, 76, 49, 77, 51, 76, 49, 72, 46, 75, 47, 70, 47, 65]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_041a0a03fcb69949fbbf0c36c19f8d67.setContent(html_525dbe4d712d5c20ce09715641659118);
+            
+        
+
+        marker_3f44e3d93249ad4657ca515ea45f5bc3.bindPopup(popup_041a0a03fcb69949fbbf0c36c19f8d67)
+        ;
+
+        
+    
+    
+            var marker_2bb25a67d6d8703d1e5499b7d248e3f7 = L.marker(
+                [40.717449, -112.010587],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_873a0c920054903e26eac95ceaf78c56 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_4a5c7a58371cf4d91aa7fbab48ff5cd8 = $(`<div id="html_4a5c7a58371cf4d91aa7fbab48ff5cd8" style="width: 100.0%; height: 100.0%;">Jordan River Parkway Trail<br>Jordan River<br>TEMP [68, 96, 65, 86, 63, 89, 67, 95, 68, 95, 70, 91, 64, 87]<br>PRECIP [20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_873a0c920054903e26eac95ceaf78c56.setContent(html_4a5c7a58371cf4d91aa7fbab48ff5cd8);
+            
+        
+
+        marker_2bb25a67d6d8703d1e5499b7d248e3f7.bindPopup(popup_873a0c920054903e26eac95ceaf78c56)
+        ;
+
+        
+    
+    
+            var marker_1a7269e5df273d0ea7a21905191dc27d = L.marker(
+                [41.1353, -111.8175],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_3e867bff62b10881807f91e231437a4b = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_b483dd4f6f488813434e4d14931f5cf5 = $(`<div id="html_b483dd4f6f488813434e4d14931f5cf5" style="width: 100.0%; height: 100.0%;">Weber River Parkway Trail<br>Weber River<br>TEMP [56, 92, 55, 84, 51, 85, 54, 92, 57, 92, 58, 88, 54, 85]<br>PRECIP [20, 20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_3e867bff62b10881807f91e231437a4b.setContent(html_b483dd4f6f488813434e4d14931f5cf5);
+            
+        
+
+        marker_1a7269e5df273d0ea7a21905191dc27d.bindPopup(popup_3e867bff62b10881807f91e231437a4b)
+        ;
+
+        
+    
+    
+            var marker_115756d78311f48cfdbae17068ccd3e4 = L.marker(
+                [39.564362, -110.845168],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_608118b8b4e6d22b4e6f4bd0af91b35a = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_301a07dc79e9102347956bb488ab6544 = $(`<div id="html_301a07dc79e9102347956bb488ab6544" style="width: 100.0%; height: 100.0%;">Price River Parkway Trail<br>Price River<br>TEMP [61, 88, 60, 87, 58, 88, 59, 94, 62, 93, 61, 84, 57, 85]<br>PRECIP [0, 30, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_608118b8b4e6d22b4e6f4bd0af91b35a.setContent(html_301a07dc79e9102347956bb488ab6544);
+            
+        
+
+        marker_115756d78311f48cfdbae17068ccd3e4.bindPopup(popup_608118b8b4e6d22b4e6f4bd0af91b35a)
+        ;
+
+        
+    
+    
+            var marker_acd79f31749b1eae195e837b76826b1c = L.marker(
+                [38.784836, -111.822113],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_3fb1c990e9fd63ff24f40aaadffd80be = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_3d5837856413637d446f97eec79c8de1 = $(`<div id="html_3d5837856413637d446f97eec79c8de1" style="width: 100.0%; height: 100.0%;">Sevier River Parkway Trail<br>Sevier River<br>TEMP [60, 83, 59, 82, 58, 84, 60, 89, 62, 88, 60, 82, 57, 83]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_3fb1c990e9fd63ff24f40aaadffd80be.setContent(html_3d5837856413637d446f97eec79c8de1);
+            
+        
+
+        marker_acd79f31749b1eae195e837b76826b1c.bindPopup(popup_3fb1c990e9fd63ff24f40aaadffd80be)
+        ;
+
+        
+    
+    
+            var marker_6260ec70c55c3d3c54f9771078d493ef = L.marker(
+                [38.82495, -109.85623],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_a9da7089530fc26bae4afa2d7ef446f2 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_20561e8e7c782db2da195882bd63fa28 = $(`<div id="html_20561e8e7c782db2da195882bd63fa28" style="width: 100.0%; height: 100.0%;">San Rafael River Parkway Trail<br>San Rafael River<br>TEMP [64, 96, 64, 94, 60, 95, 62, 100, 64, 101, 64, 91, 59, 94]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_a9da7089530fc26bae4afa2d7ef446f2.setContent(html_20561e8e7c782db2da195882bd63fa28);
+            
+        
+
+        marker_6260ec70c55c3d3c54f9771078d493ef.bindPopup(popup_a9da7089530fc26bae4afa2d7ef446f2)
+        ;
+
+        
+    
+    
+            var marker_b4b381d1cc842a6b414523e290dbde53 = L.marker(
+                [46.482, -117.0137],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_7f0e85518eec0403a043fef745c640f0 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_8a8a6910618a9d1d8c6ff6d8590144b8 = $(`<div id="html_8a8a6910618a9d1d8c6ff6d8590144b8" style="width: 100.0%; height: 100.0%;">John Wayne Pioneer Trail<br>Columbia River<br>TEMP [54, 74, 53, 76, 52, 80, 50, 73, 47, 78, 52, 75, 48, 66]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_7f0e85518eec0403a043fef745c640f0.setContent(html_8a8a6910618a9d1d8c6ff6d8590144b8);
+            
+        
+
+        marker_b4b381d1cc842a6b414523e290dbde53.bindPopup(popup_7f0e85518eec0403a043fef745c640f0)
+        ;
+
+        
+    
+    
+            var marker_7e0ff9010a34795089048d88e5e0df56 = L.marker(
+                [46.717193, -120.818863],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_04773a1fa1d5ad26816f8269c572bcce = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_b8b637d4753f8a61c75c19ab4f01a696 = $(`<div id="html_b8b637d4753f8a61c75c19ab4f01a696" style="width: 100.0%; height: 100.0%;">Palouse to Cascades Trail<br>Yakima River<br>TEMP [61, 77, 52, 78, 55, 74, 45, 71, 47, 75, 50, 70, 45, 64]<br>PRECIP [0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_04773a1fa1d5ad26816f8269c572bcce.setContent(html_b8b637d4753f8a61c75c19ab4f01a696);
+            
+        
+
+        marker_7e0ff9010a34795089048d88e5e0df56.bindPopup(popup_04773a1fa1d5ad26816f8269c572bcce)
+        ;
+
+        
+    
+    
+            var marker_d300fcce398f132db8df542f7c1a9056 = L.marker(
+                [47.5694, -117.2463],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_dd7ab1d5fd9bf21cc12e337f7b4eda87 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_270f9b5ef211980bf4d4db171e724c2e = $(`<div id="html_270f9b5ef211980bf4d4db171e724c2e" style="width: 100.0%; height: 100.0%;">Centennial Trail<br>Spokane River<br>TEMP [54, 76, 54, 76, 53, 79, 48, 72, 47, 78, 51, 75, 48, 67]<br>PRECIP [0, 20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20]</div>`)[0];
+                popup_dd7ab1d5fd9bf21cc12e337f7b4eda87.setContent(html_270f9b5ef211980bf4d4db171e724c2e);
+            
+        
+
+        marker_d300fcce398f132db8df542f7c1a9056.bindPopup(popup_dd7ab1d5fd9bf21cc12e337f7b4eda87)
+        ;
+
+        
+    
+    
+            var marker_8a09a985bb059c02b4d877ae36349101 = L.marker(
+                [46.9552, -120.5126],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_ba0caffde14274ed1f26e80df64c81d0 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_21f209f8e1068b252bb2fb9ba83f3572 = $(`<div id="html_21f209f8e1068b252bb2fb9ba83f3572" style="width: 100.0%; height: 100.0%;">John Wayne Trail<br>Yakima River<br>TEMP [60, 82, 53, 81, 55, 79, 47, 75, 47, 80, 51, 74, 46, 68]<br>PRECIP [0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_ba0caffde14274ed1f26e80df64c81d0.setContent(html_21f209f8e1068b252bb2fb9ba83f3572);
+            
+        
+
+        marker_8a09a985bb059c02b4d877ae36349101.bindPopup(popup_ba0caffde14274ed1f26e80df64c81d0)
+        ;
+
+        
+    
+    
+            var marker_f81b5c7b975b6132e018f65bcba42815 = L.marker(
+                [39.094264, -77.33471],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_9bbab7d611635d5f2d8a87ae9178cad8 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_b33cc55c3eae45703a46162eb3e05d83 = $(`<div id="html_b33cc55c3eae45703a46162eb3e05d83" style="width: 100.0%; height: 100.0%;">Raging River Trail<br>Raging River<br>TEMP [62, 83, 58, 77, 56, 77, 56, 85, 65, 92, 68, 94, 70, 90]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_9bbab7d611635d5f2d8a87ae9178cad8.setContent(html_b33cc55c3eae45703a46162eb3e05d83);
+            
+        
+
+        marker_f81b5c7b975b6132e018f65bcba42815.bindPopup(popup_9bbab7d611635d5f2d8a87ae9178cad8)
+        ;
+
+        
+    
+    
+            var marker_0ad23790915bd3efc56e369bdbb2162f = L.marker(
+                [47.503715, -116.664239],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_228c8a757e5bfd66cd5a1c094847ba5d = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_3751a833dcefd4d91248a24192b21f67 = $(`<div id="html_3751a833dcefd4d91248a24192b21f67" style="width: 100.0%; height: 100.0%;">Coeur d'Alene River Trail<br>Coeur d'Alene River<br>TEMP [54, 77, 55, 75, 53, 77, 50, 72, 47, 77, 51, 75, 49, 66]<br>PRECIP [0, 20, 20, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 20]</div>`)[0];
+                popup_228c8a757e5bfd66cd5a1c094847ba5d.setContent(html_3751a833dcefd4d91248a24192b21f67);
+            
+        
+
+        marker_0ad23790915bd3efc56e369bdbb2162f.bindPopup(popup_228c8a757e5bfd66cd5a1c094847ba5d)
+        ;
+
+        
+    
+    
+            var marker_67947ec1aa38a4ebcd8478faadf25611 = L.marker(
+                [46.569094, -120.502264],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_bcbb4b15bb6938294ba2cf0248e56b93 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_bf9be4df93df0ba14af80128820d50b8 = $(`<div id="html_bf9be4df93df0ba14af80128820d50b8" style="width: 100.0%; height: 100.0%;">Yakima Greenway<br>Yakima River<br>TEMP [62, 87, 55, 88, 56, 85, 48, 82, 49, 84, 53, 80, 47, 74]<br>PRECIP [0, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_bcbb4b15bb6938294ba2cf0248e56b93.setContent(html_bf9be4df93df0ba14af80128820d50b8);
+            
+        
+
+        marker_67947ec1aa38a4ebcd8478faadf25611.bindPopup(popup_bcbb4b15bb6938294ba2cf0248e56b93)
+        ;
+
+        
+    
+    
+            var marker_e343fc03fb95031fcfcb7b31cd9a6460 = L.marker(
+                [46.12799, -117.94599],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_f428b22afaf070ac6ef3fec2799dd718 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_727da82661483bde5608cf0f59d91f61 = $(`<div id="html_727da82661483bde5608cf0f59d91f61" style="width: 100.0%; height: 100.0%;">Columbia Plateau Trail<br>Snake River<br>TEMP [59, 71, 53, 72, 55, 75, 48, 69, 48, 74, 52, 69, 46, 62]<br>PRECIP [20, 30, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_f428b22afaf070ac6ef3fec2799dd718.setContent(html_727da82661483bde5608cf0f59d91f61);
+            
+        
+
+        marker_e343fc03fb95031fcfcb7b31cd9a6460.bindPopup(popup_f428b22afaf070ac6ef3fec2799dd718)
+        ;
+
+        
+    
+    
+            var marker_a98187eaf8a809014d165e1a6dd353e7 = L.marker(
+                [47.89533, -122.09749],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_abee2f4f001fedea4f22b2c45f52c76a = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_287000ae2ba2ffd9bfc30e381688665a = $(`<div id="html_287000ae2ba2ffd9bfc30e381688665a" style="width: 100.0%; height: 100.0%;">Snohomish River Trail<br>Snohomish River<br>TEMP [54, 76, 51, 74, 52, 70, 49, 69, 45, 72, 48, 69, 47, 63]<br>PRECIP [0, 0, 0, 0, 30, 30, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_abee2f4f001fedea4f22b2c45f52c76a.setContent(html_287000ae2ba2ffd9bfc30e381688665a);
+            
+        
+
+        marker_a98187eaf8a809014d165e1a6dd353e7.bindPopup(popup_abee2f4f001fedea4f22b2c45f52c76a)
+        ;
+
+        
+    
+    
+            var marker_a5b6260a95270ccce06ac0dfda1d9d22 = L.marker(
+                [45.7448, -92.8383],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_f5370dafb8364a3edc848072f70b9557 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_651da03e3931be93bd7c6004762d4a4a = $(`<div id="html_651da03e3931be93bd7c6004762d4a4a" style="width: 100.0%; height: 100.0%;">Wild Rivers State Trail<br>St. Croix River<br>TEMP [51, 68, 44, 74, 53, 75, 51, 80, 59, 82, 55, 78, 54, 77]<br>PRECIP [0, 0, 0, 0, 30, 60, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_f5370dafb8364a3edc848072f70b9557.setContent(html_651da03e3931be93bd7c6004762d4a4a);
+            
+        
+
+        marker_a5b6260a95270ccce06ac0dfda1d9d22.bindPopup(popup_f5370dafb8364a3edc848072f70b9557)
+        ;
+
+        
+    
+    
+            var marker_c366b6cca8cd80a0263c6b1a63c7d0b7 = L.marker(
+                [44.53968, -88.00985],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_1b9427b94f39a96acf754756658fe950 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_3fa7e3fe6b4fb0d7630bff83ae0058b3 = $(`<div id="html_3fa7e3fe6b4fb0d7630bff83ae0058b3" style="width: 100.0%; height: 100.0%;">Fox River State Trail<br>Fox River<br>TEMP [54, 71, 49, 71, 47, 76, 59, 80, 62, 85, 62, 80, 57, 79]<br>PRECIP [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_1b9427b94f39a96acf754756658fe950.setContent(html_3fa7e3fe6b4fb0d7630bff83ae0058b3);
+            
+        
+
+        marker_c366b6cca8cd80a0263c6b1a63c7d0b7.bindPopup(popup_1b9427b94f39a96acf754756658fe950)
+        ;
+
+        
+    
+    
+            var marker_b770b8bb7745c599c877d7ff941a5262 = L.marker(
+                [44.581869, -108.812078],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_a497c2b4a6a26e730ae10bd7b2ea89d0 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_49f5307ffeb6b6dffb7ab0a6b5596be8 = $(`<div id="html_49f5307ffeb6b6dffb7ab0a6b5596be8" style="width: 100.0%; height: 100.0%;">Fossil Hill Trail System<br>Greybull River<br>TEMP [48, 74, 56, 74, 54, 82, 58, 85, 57, 79, 57, 81, 57, 79]<br>PRECIP [0, 30, 30, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_a497c2b4a6a26e730ae10bd7b2ea89d0.setContent(html_49f5307ffeb6b6dffb7ab0a6b5596be8);
+            
+        
+
+        marker_b770b8bb7745c599c877d7ff941a5262.bindPopup(popup_a497c2b4a6a26e730ae10bd7b2ea89d0)
+        ;
+
+        
+    
+    
+            var marker_492be13075b7cc0174a15c389789c842 = L.marker(
+                [39.3192, -77.6288],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_77c0380d139be5f5c50030da78d164d6 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_2561bba2ad7f8e65afd7a0bd6146ffb5 = $(`<div id="html_2561bba2ad7f8e65afd7a0bd6146ffb5" style="width: 100.0%; height: 100.0%;">Horse Creek Trail<br>Horse Creek<br>TEMP [62, 81, 57, 76, 53, 76, 54, 85, 62, 91, 67, 93, 67, 89]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_77c0380d139be5f5c50030da78d164d6.setContent(html_2561bba2ad7f8e65afd7a0bd6146ffb5);
+            
+        
+
+        marker_492be13075b7cc0174a15c389789c842.bindPopup(popup_77c0380d139be5f5c50030da78d164d6)
+        ;
+
+        
+    
+    
+            var marker_e4db559edc2c5378bf835e9a8b13fb0b = L.marker(
+                [39.2465, -77.3347],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_24b5ed85d48901a77e7e5c11e4e4bb45 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_87c9309139beb4d8cbd2b6565ee39f7a = $(`<div id="html_87c9309139beb4d8cbd2b6565ee39f7a" style="width: 100.0%; height: 100.0%;">Little Valley Trails<br>Green River<br>TEMP [61, 81, 57, 75, 54, 76, 55, 84, 63, 91, 67, 93, 68, 89]<br>PRECIP [0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_24b5ed85d48901a77e7e5c11e4e4bb45.setContent(html_87c9309139beb4d8cbd2b6565ee39f7a);
+            
+        
+
+        marker_e4db559edc2c5378bf835e9a8b13fb0b.bindPopup(popup_24b5ed85d48901a77e7e5c11e4e4bb45)
+        ;
+
+        
+    
+    
+            var marker_dcb9f9674bd4bd25ce0934f6301ceaba = L.marker(
+                [41.56967, -109.57819],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_871eb573338480b9d1fc9267cd18cccb = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_6a3d78fd47f807788ca048c6b2480e1a = $(`<div id="html_6a3d78fd47f807788ca048c6b2480e1a" style="width: 100.0%; height: 100.0%;">Pinedale Trails<br>Green River<br>TEMP [51, 84, 53, 80, 48, 82, 51, 87, 54, 89, 57, 81, 51, 81]<br>PRECIP [0, 20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_871eb573338480b9d1fc9267cd18cccb.setContent(html_6a3d78fd47f807788ca048c6b2480e1a);
+            
+        
+
+        marker_dcb9f9674bd4bd25ce0934f6301ceaba.bindPopup(popup_871eb573338480b9d1fc9267cd18cccb)
+        ;
+
+        
+    
+    
+            var marker_734a6fc66450d437a66e787d12e4db11 = L.marker(
+                [37.5176, -86.3568],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_7d4ed4a5d1de0851e72767ed347d0a08 = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_1c87ab6ffdeb4901d5a912c8527e9bc5 = $(`<div id="html_1c87ab6ffdeb4901d5a912c8527e9bc5" style="width: 100.0%; height: 100.0%;">Salt River Trail<br>Green River<br>TEMP [67, 79, 56, 77, 53, 78, 55, 83, 60, 88, 65, 90, 67, 90]<br>PRECIP [20, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 20, 20, 20]</div>`)[0];
+                popup_7d4ed4a5d1de0851e72767ed347d0a08.setContent(html_1c87ab6ffdeb4901d5a912c8527e9bc5);
+            
+        
+
+        marker_734a6fc66450d437a66e787d12e4db11.bindPopup(popup_7d4ed4a5d1de0851e72767ed347d0a08)
+        ;
+
+        
+    
+    
+            var marker_1e6319f16dbbb944952934e4f4175541 = L.marker(
+                [41.183743, -106.723892],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_bbe8f79bab60af3daf72d83ec78f95fb = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_0b4ecaf61de9ae6f988769656633ee0b = $(`<div id="html_0b4ecaf61de9ae6f988769656633ee0b" style="width: 100.0%; height: 100.0%;">Snowy Range Trail<br>Encampment River<br>TEMP [53, 75, 53, 76, 48, 75, 50, 80, 54, 82, 55, 76, 51, 74]<br>PRECIP [0, 30, 20, 50, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_bbe8f79bab60af3daf72d83ec78f95fb.setContent(html_0b4ecaf61de9ae6f988769656633ee0b);
+            
+        
+
+        marker_1e6319f16dbbb944952934e4f4175541.bindPopup(popup_bbe8f79bab60af3daf72d83ec78f95fb)
+        ;
+
+        
+    
+    
+            var marker_e657d83c69c8c775c99378cd1b3e5bff = L.marker(
+                [41.234589, -107.717973],
+                {"color": "blue"}
+            ).addTo(map_95d9b549850f55eccacb01a58f4c3c4a);
+        
+    
+        var popup_6654e03fe63554d97d5c6d26abc6d98f = L.popup({"maxWidth": 600});
+
+        
+            
+                var html_1c2e14c89b255b111217488b2a62d4c4 = $(`<div id="html_1c2e14c89b255b111217488b2a62d4c4" style="width: 100.0%; height: 100.0%;">Upper North Platte Trail<br>Green River<br>TEMP [48, 82, 51, 82, 48, 81, 49, 85, 51, 88, 55, 80, 49, 80]<br>PRECIP [0, 0, 20, 30, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</div>`)[0];
+                popup_6654e03fe63554d97d5c6d26abc6d98f.setContent(html_1c2e14c89b255b111217488b2a62d4c4);
+            
+        
+
+        marker_e657d83c69c8c775c99378cd1b3e5bff.bindPopup(popup_6654e03fe63554d97d5c6d26abc6d98f)
+        ;
+
+        
+    
+</script>
+</html>
